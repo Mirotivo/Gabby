@@ -118,7 +118,6 @@ const animateSections = [
   '.about-text',
   '.contact-info',
   '.contact-form-wrap',
-  '.gallery-item',
 ];
 
 animateSections.forEach(selector => {

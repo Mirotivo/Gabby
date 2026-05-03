@@ -616,7 +616,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 /* ============================================
    GALLERY
    ============================================ */
-.gallery { padding: 100px 0 0; background: var(--grey-light); }
+.gallery { padding: 100px 0 60px; background: var(--grey-light); }
 .gallery .container { margin-bottom: 48px; }
 
 .gallery-grid {
