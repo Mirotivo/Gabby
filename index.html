@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top and Tasty Catering | North Ryde, Sydney</title>
+  <meta name="description" content="Top and Tasty Catering – premium catering services in North Ryde, Sydney. Corporate events, weddings, private parties and more." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-top">Top &amp; Tasty</span>
+        <span class="logo-sub">C A T E R I N G</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="nav-cta">Get a Quote</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Sydney's Premier Catering Experience</p>
+      <h1>Exquisite Food.<br />Unforgettable Events.</h1>
+      <p class="hero-sub">From intimate gatherings to grand corporate events, we craft culinary experiences that leave a lasting impression.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Request a Quote</a>
+        <a href="#services" class="btn btn-outline">Our Services</a>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+      <span>Scroll Down</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-num" data-target="1200">0</span><span class="stat-plus">+</span>
+        <p>Events Catered</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="98">0</span><span class="stat-plus">%</span>
+        <p>Client Satisfaction</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+        <p>Menu Options</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="img-main">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&q=80" alt="Catering setup" />
+          </div>
+          <div class="img-accent">
+            <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80" alt="Gourmet dish" />
+          </div>
+          <div class="about-badge">
+            <i class="fa-solid fa-award"></i>
+            <span>Award-Winning<br />Catering</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-tag">About Us</p>
+          <h2>Passion for Food,<br />Dedication to Excellence</h2>
+          <p>Top and Tasty Catering has been serving Sydney's North Ryde community and beyond for over 15 years. Our philosophy is simple: use the freshest locally sourced ingredients, apply expert culinary technique, and deliver with flawless service.</p>
+          <p>Whether you're planning a corporate lunch for 20, a wedding reception for 300, or a casual weekend BBQ, our team of professional chefs and event specialists will craft a bespoke experience tailored to your vision.</p>
+          <ul class="about-features">
+            <li><i class="fa-solid fa-check"></i> Fresh, locally sourced ingredients</li>
+            <li><i class="fa-solid fa-check"></i> Fully licensed and insured</li>
+            <li><i class="fa-solid fa-check"></i> Dietary & allergy-friendly options</li>
+            <li><i class="fa-solid fa-check"></i> Professional, uniformed staff</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What We Do</p>
+        <h2>Our Catering Services</h2>
+        <p class="section-desc">From corporate boardrooms to beachside celebrations, we bring exceptional food and seamless service to every occasion.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Corporate Catering</h3>
+          <p>Impress clients and energise teams with our professional corporate catering solutions. Boardroom lunches, conferences, product launches and office events.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>Weddings &amp; Celebrations</h3>
+          <p>Make your special day truly unforgettable. Our wedding catering service offers bespoke menus, elegant presentation, and impeccable service throughout.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Private Events</h3>
+          <p>Birthday parties, anniversaries, cocktail evenings — whatever the occasion, we create the perfect culinary backdrop for your celebration.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>BBQ &amp; Outdoor Events</h3>
+          <p>Bring the sizzle to your next outdoor event. Our BBQ catering packages include premium meats, fresh salads, and all the trimmings.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <h3>Cocktail Parties</h3>
+          <p>Canapes, finger food, and elegant platters — our cocktail catering menus are designed to impress, keeping your guests mingling and satisfied.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>School &amp; Community Events</h3>
+          <p>Nutritious, delicious, and perfectly portioned catering for school events, fundraisers, and community gatherings of any size.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU HIGHLIGHT ===== -->
+  <section class="menu" id="menu">
+    <div class="menu-bg-overlay"></div>
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-tag">Sample Menus</p>
+        <h2>Taste the Difference</h2>
+        <p class="section-desc">A snapshot of our diverse menu offerings. All menus are fully customisable to your event requirements and dietary needs.</p>
+      </div>
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="starters">Starters</button>
+        <button class="tab-btn" data-tab="mains">Mains</button>
+        <button class="tab-btn" data-tab="desserts">Desserts</button>
+        <button class="tab-btn" data-tab="platters">Platters</button>
+      </div>
+      <div class="menu-panels">
+        <div class="menu-panel active" id="starters">
+          <div class="menu-grid">
+            <div class="menu-item"><span class="menu-name">Smoked Salmon Blinis</span><span class="menu-dot"></span><span class="menu-desc">cream cheese, capers, dill</span></div>
+            <div class="menu-item"><span class="menu-name">Bruschetta Trio</span><span class="menu-dot"></span><span class="menu-desc">tomato, olive tapenade, brie &amp; fig</span></div>
+            <div class="menu-item"><span class="menu-name">Prawn Cocktail Cups</span><span class="menu-dot"></span><span class="menu-desc">marie rose sauce, iceberg lettuce</span></div>
+            <div class="menu-item"><span class="menu-name">Arancini Balls</span><span class="menu-dot"></span><span class="menu-desc">wild mushroom &amp; parmesan, saffron aioli</span></div>
+            <div class="menu-item"><span class="menu-name">Duck Liver Pâté</span><span class="menu-dot"></span><span class="menu-desc">toasted brioche, cornichons</span></div>
+            <div class="menu-item"><span class="menu-name">Caprese Skewers</span><span class="menu-dot"></span><span class="menu-desc">buffalo mozzarella, cherry tomato, basil oil</span></div>
+          </div>
+        </div>
+        <div class="menu-panel" id="mains">
+          <div class="menu-grid">
+            <div class="menu-item"><span class="menu-name">Slow-Roasted Lamb Shoulder</span><span class="menu-dot"></span><span class="menu-desc">rosemary jus, roasted vegetables</span></div>
+            <div class="menu-item"><span class="menu-name">Pan-Seared Barramundi</span><span class="menu-dot"></span><span class="menu-desc">lemon butter, baby capers, broccolini</span></div>
+            <div class="menu-item"><span class="menu-name">Free-Range Chicken Supreme</span><span class="menu-dot"></span><span class="menu-desc">mushroom cream sauce, truffle mash</span></div>
+            <div class="menu-item"><span class="menu-name">Beef Tenderloin</span><span class="menu-dot"></span><span class="menu-desc">red wine reduction, dauphinoise potato</span></div>
+            <div class="menu-item"><span class="menu-name">Roasted Pumpkin Risotto</span><span class="menu-dot"></span><span class="menu-desc">sage butter, toasted pine nuts (V)</span></div>
+            <div class="menu-item"><span class="menu-name">Moroccan Vegetable Tagine</span><span class="menu-dot"></span><span class="menu-desc">couscous, harissa yoghurt (VE)</span></div>
+          </div>
+        </div>
+        <div class="menu-panel" id="desserts">
+          <div class="menu-grid">
+            <div class="menu-item"><span class="menu-name">Classic Pavlova</span><span class="menu-dot"></span><span class="menu-desc">fresh berries, passionfruit coulis, cream</span></div>
+            <div class="menu-item"><span class="menu-name">Chocolate Fondant</span><span class="menu-dot"></span><span class="menu-desc">vanilla bean ice cream, salted caramel</span></div>
+            <div class="menu-item"><span class="menu-name">Lemon Tart</span><span class="menu-dot"></span><span class="menu-desc">raspberry coulis, candied zest</span></div>
+            <div class="menu-item"><span class="menu-name">Affogato Station</span><span class="menu-dot"></span><span class="menu-desc">espresso, vanilla gelato, amaretti</span></div>
+            <div class="menu-item"><span class="menu-name">Cheese &amp; Fruit Board</span><span class="menu-dot"></span><span class="menu-desc">seasonal cheeses, artisan crackers, quince</span></div>
+            <div class="menu-item"><span class="menu-name">Mini Éclair Selection</span><span class="menu-dot"></span><span class="menu-desc">chocolate, coffee, strawberry</span></div>
+          </div>
+        </div>
+        <div class="menu-panel" id="platters">
+          <div class="menu-grid">
+            <div class="menu-item"><span class="menu-name">Charcuterie Platter</span><span class="menu-dot"></span><span class="menu-desc">cured meats, pickles, artisan breads</span></div>
+            <div class="menu-item"><span class="menu-name">Antipasto Platter</span><span class="menu-dot"></span><span class="menu-desc">olives, roasted peppers, artichokes, bocconcini</span></div>
+            <div class="menu-item"><span class="menu-name">Seafood Platter</span><span class="menu-dot"></span><span class="menu-desc">prawns, oysters, smoked salmon, dips</span></div>
+            <div class="menu-item"><span class="menu-name">Sushi &amp; Sashimi Platter</span><span class="menu-dot"></span><span class="menu-desc">assorted rolls, nigiri, soy &amp; wasabi</span></div>
+            <div class="menu-item"><span class="menu-name">Mezze Platter</span><span class="menu-dot"></span><span class="menu-desc">hummus, falafel, pita, tabbouleh (VE)</span></div>
+            <div class="menu-item"><span class="menu-name">Sweet Platter</span><span class="menu-dot"></span><span class="menu-desc">macarons, petit fours, chocolate truffles</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-cta">
+        <p>All menus can be tailored for dietary requirements including gluten-free, dairy-free, vegan and halal.</p>
+        <a href="#contact" class="btn btn-primary">Request Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Why Choose Us</p>
+        <h2>The Top &amp; Tasty Difference</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h4>Fresh &amp; Local</h4>
+          <p>We partner with local farmers and suppliers to bring you the freshest seasonal produce at every event.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-star"></i></div>
+          <h4>5-Star Service</h4>
+          <p>Our experienced, professionally trained staff ensure your event runs smoothly from setup to pack-down.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-sliders"></i></div>
+          <h4>Fully Customisable</h4>
+          <p>Every menu, every service, every detail is tailored to your event's unique needs and preferences.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Licensed &amp; Insured</h4>
+          <p>Fully licensed, RSA certified and comprehensively insured — so you can relax and enjoy the event.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Our Work</p>
+        <h2>A Taste of Our Events</h2>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Catering event 1" />
+        <div class="gallery-overlay"><span>Corporate Lunch</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Catering event 2" />
+        <div class="gallery-overlay"><span>Wedding Reception</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Catering event 3" />
+        <div class="gallery-overlay"><span>Cocktail Party</span></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80" alt="Catering event 4" />
+        <div class="gallery-overlay"><span>Gala Dinner</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80" alt="Catering event 5" />
+        <div class="gallery-overlay"><span>Private Party</span></div>
+      </div>
+      <div class="gallery-item wide">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" alt="Catering event 6" />
+        <div class="gallery-overlay"><span>Outdoor BBQ</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Client Reviews</p>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Top and Tasty Catering completely exceeded our expectations at our annual corporate gala. The food was absolutely divine and the staff were professional and attentive all evening. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SR</div>
+            <div>
+              <strong>Sarah Robertson</strong>
+              <span>Events Manager, TechCorp Sydney</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"We used Top and Tasty for our wedding reception and it was the best decision we made. Every single guest complimented the food and service. The team made our day truly magical!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <strong>James &amp; Michelle Chen</strong>
+              <span>Wedding Reception, North Ryde</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Brilliant catering for our company's end-of-year party. The cocktail platters were incredible and the team set up beautifully. We'll definitely be using Top and Tasty again!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DP</div>
+            <div>
+              <strong>David Patel</strong>
+              <span>Director, Ryde Business Group</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-tag">Get in Touch</p>
+          <h2>Let's Plan Your Perfect Event</h2>
+          <p>Ready to create an unforgettable culinary experience? Get in touch with our team today for a free, no-obligation quote.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="cd-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Our Address</strong>
+                <span>35 Lorna Avenue, North Ryde NSW 2113</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:+61403488819">0403 488 819</a></span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span><a href="mailto:hello@topandtastycatering.com.au">hello@topandtastycatering.com.au</a></span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Business Hours</strong>
+                <span>Mon – Fri: 8am – 6pm<br />Sat: 9am – 4pm</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="event-type">Event Type *</label>
+              <select id="event-type" name="event-type" required>
+                <option value="" disabled selected>Select event type</option>
+                <option>Corporate Event</option>
+                <option>Wedding</option>
+                <option>Private Party</option>
+                <option>BBQ / Outdoor</option>
+                <option>Cocktail Party</option>
+                <option>School / Community</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guests">Number of Guests *</label>
+                <input type="number" id="guests" name="guests" placeholder="e.g. 50" min="1" required />
+              </div>
+              <div class="form-group">
+                <label for="event-date">Event Date *</label>
+                <input type="date" id="event-date" name="event-date" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us More</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your event, budget, dietary requirements, venue..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Enquiry <i class="fa-solid fa-paper-plane"></i></button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i> Thank you! We'll be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP ===== -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.2!2d151.1!3d-33.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s35+Lorna+Avenue%2C+North+Ryde+NSW+2113!5e0!3m2!1sen!2sau!4v1700000000000"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Top and Tasty Catering Location">
+    </iframe>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-top">Top &amp; Tasty</span>
+              <span class="logo-sub">C A T E R I N G</span>
+            </div>
+            <p>Creating exceptional culinary experiences across Sydney and beyond. Quality food, flawless service, memorable events.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#services">Corporate Catering</a></li>
+              <li><a href="#services">Wedding Catering</a></li>
+              <li><a href="#services">Private Events</a></li>
+              <li><a href="#services">BBQ &amp; Outdoor</a></li>
+              <li><a href="#services">Cocktail Parties</a></li>
+              <li><a href="#services">Community Events</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fa-solid fa-location-dot"></i> 35 Lorna Avenue, North Ryde NSW 2113</p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+61403488819">0403 488 819</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@topandtastycatering.com.au">hello@topandtastycatering.com.au</a></p>
+            <p><i class="fa-solid fa-clock"></i> Mon–Fri 8am–6pm | Sat 9am–4pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Top &amp; Tasty Catering. All rights reserved. | 35 Lorna Avenue, North Ryde NSW 2113</p>
+        <p class="footer-legal"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
