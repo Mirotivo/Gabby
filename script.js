@@ -198,8 +198,9 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(section => sectionObserver.observe(section));
 
-/* ---- PARALLAX HERO subtle effect ---- */
+/* ---- PARALLAX HERO subtle effect (desktop only) ---- */
 window.addEventListener('scroll', () => {
+  if (window.innerWidth <= 768) return; // skip on mobile
   const hero = document.querySelector('.hero');
   if (hero) {
     const scrolled = window.scrollY;
