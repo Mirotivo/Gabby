@@ -581,7 +581,7 @@ h4 { font-size: 1.05rem; font-weight: 600; }
 
 .why-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
