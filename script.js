@@ -42,23 +42,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ---- MENU TABS ---- */
-const tabBtns   = document.querySelectorAll('.tab-btn');
-const menuPanels = document.querySelectorAll('.menu-panel');
-
-tabBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    // remove active from all
-    tabBtns.forEach(b => b.classList.remove('active'));
-    menuPanels.forEach(p => p.classList.remove('active'));
-
-    // activate clicked
-    btn.classList.add('active');
-    const target = document.getElementById(btn.dataset.tab);
-    if (target) target.classList.add('active');
-  });
-});
-
 /* ---- ANIMATED COUNTERS ---- */
 function animateCounter(el) {
   const target   = parseInt(el.dataset.target, 10);
